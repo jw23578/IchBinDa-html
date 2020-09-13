@@ -18,14 +18,14 @@ $mail_status = mail($mail_to, $subject, $body_message, $headers);
 if ($mail_status) { ?>
     <script language="javascript" type="text/javascript">
         alert('Thank you for the feedback.');
-        window.location = 'form.html';
+        window.location = 'index.html';
     </script>
 <?php
 }
 else { ?>
     <script language="javascript" type="text/javascript">
-        alert('Something went wrong. Please try again or contact at myPersonalEmail@email.com');
-        window.location = 'form.html';
+        alert('Something went wrong. Please try again or contact at ichbinda@jw78.de');
+        window.location = 'index.html';
     </script>
 <?php
 }
