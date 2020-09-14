@@ -83,6 +83,10 @@ ul li {
   list-style: none;
 }
 
+.list {
+  list-style: decimal;
+}
+
 a:hover,
 a:focus {
   text-decoration: none;
