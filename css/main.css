@@ -954,6 +954,10 @@ button:focus {
   background: #f6fbfd;
 }
 
+.full-width {
+  width: 100%
+}
+
 .single-feature {
   background: #fff;
   margin: 15px 0;
