@@ -147,7 +147,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   font-weight: 600;
   color: #fff;
   border: none;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -231,7 +231,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 .btn-rm {
   color: #3c9cfd;
   padding: 10px 0;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   font-size: 16px;
 }
 
@@ -296,7 +296,7 @@ button:focus {
   text-align: center;
   border-radius: 30px;
   padding: 6px 30px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 700;
   margin-bottom: 20px;
   font-size: 14px;
@@ -655,7 +655,7 @@ button:focus {
 .hero-area .contents .btn {
   margin-top: 40px;
   margin-right: 20px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .hero-area .contents .btn-border {
@@ -714,7 +714,7 @@ button:focus {
 .hero-area-2 .contents .btn {
   margin-top: 40px;
   margin-right: 20px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .hero-area-2 .contents .btn-border {
@@ -857,7 +857,7 @@ button:focus {
 .video-promo .video-promo-content h2 {
   color: #fff;
   font-size: 30px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .video-promo .video-promo-content p {
@@ -978,7 +978,7 @@ button:focus {
   font-weight: 400;
   margin-bottom: 15px;
   margin-top: 0;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 
 .single-feature:hover {
@@ -1560,7 +1560,7 @@ button:focus {
   font-weight: 700;
   margin: 15 7px 0px;
   padding: 15px 30px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   transition: all 0.3s ease 0s;
   letter-spacing: 1px;
 }
@@ -2348,7 +2348,7 @@ footer .menu li a:hover {
   text-align: center;
   border-radius: 30px;
   padding: 6px 30px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 700;
   margin-bottom: 20px;
   font-size: 14px;
