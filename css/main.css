@@ -87,6 +87,10 @@ ul li {
   list-style: decimal;
 }
 
+.listdisc {
+  list-style: disc;
+}
+
 a:hover,
 a:focus {
   text-decoration: none;
@@ -968,6 +972,10 @@ button:focus {
   transition: all 0.3s ease 0s;
 }
 
+.full-width {
+  width: 100%
+}
+
 .single-feature i {
   font-size: 42px;
   background: linear-gradient(to right, #4581B3 0%, #364995 100%);
@@ -982,7 +990,7 @@ button:focus {
   font-weight: 400;
   margin-bottom: 15px;
   margin-top: 0;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 
 .single-feature:hover {
