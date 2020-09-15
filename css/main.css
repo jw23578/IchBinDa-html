@@ -83,14 +83,6 @@ ul li {
   list-style: none;
 }
 
-.list {
-  list-style: decimal;
-}
-
-.listdisc {
-  list-style: disc;
-}
-
 a:hover,
 a:focus {
   text-decoration: none;
@@ -155,7 +147,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   font-weight: 600;
   color: #fff;
   border: none;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -239,7 +231,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 .btn-rm {
   color: #3c9cfd;
   padding: 10px 0;
-  /* text-transform: capitalize; */
+  text-transform: capitalize;
   font-size: 16px;
 }
 
@@ -972,10 +964,6 @@ button:focus {
   transition: all 0.3s ease 0s;
 }
 
-.full-width {
-  width: 100%
-}
-
 .single-feature i {
   font-size: 42px;
   background: linear-gradient(to right, #4581B3 0%, #364995 100%);
@@ -990,7 +978,7 @@ button:focus {
   font-weight: 400;
   margin-bottom: 15px;
   margin-top: 0;
-  /* text-transform: capitalize; */
+  text-transform: capitalize;
 }
 
 .single-feature:hover {
