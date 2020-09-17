@@ -36,7 +36,8 @@ Domain Path:      /languages/
    ========================================================================== */
 body {
   font-family: 'Roboto', sans-serif;
-  color: #a0a6ad;
+  color: #000;
+  /* color: #a0a6ad; */
   font-size: 14px;
   font-weight: 400;
   background: #fff;
@@ -49,7 +50,8 @@ html {
 
 p {
   font-size: 14px;
-  color: #a0a6ad;
+  color: #000;
+   /* #a0a6ad; */
   line-height: 26px;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 0;
@@ -1030,7 +1032,8 @@ button:focus {
 
 #features .nav .nav-item .nav-link {
   font-size: 20px;
-  color: #a0a6ad;
+  color: #000;
+  /* color: #a0a6ad; */
   padding: 30px 0;
   line-height: 1;
   -webkit-transition: color 0.2s;
@@ -1394,7 +1397,8 @@ button:focus {
 }
 
 .testimonial-item .content-inner span {
-  color: #a0a6ad;
+  color: #000;
+  /* color: #a0a6ad; */
 }
 
 .testimonial-item .content-inner .author-info {
@@ -1890,7 +1894,8 @@ button:focus {
 }
 
 #blog .author .name a {
-  color: #a0a6ad;
+  color: #000;
+  /* color: #a0a6ad; */
   font-size: 14px;
   font-weight: 400;
 }
