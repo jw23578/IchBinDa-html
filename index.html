@@ -476,25 +476,27 @@
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
-                          <input type="text" class="form-control" id="name" name="name" placeholder="Name" required data-error="Bitte geben Sie ihren Namen ein.">
+                          <input type="text" class="form-control" id="name" name="name" placeholder="Name" required pattern=".*\S.*" data-error="Bitte geben Sie ihren Namen ein.">
                           <div class="help-block with-errors"></div>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
-                          <input type="text" placeholder="Email" id="email" class="form-control" name="email" required data-error="Bitte geben Sie ihre E-Mail-Adresse ein.">
+                          <input type="text" placeholder="E-Mail-Adresse" id="email" class="form-control" name="email" required pattern=".*\S.*"
+                          title="Bitte geben Sie ihre E-Mail-Adresse ein"
+                          data-error="Bitte geben Sie ihre E-Mail-Adresse ein.">
                           <div class="help-block with-errors"></div>
                         </div>
                       </div>
                       <div class="col-md-12">
                         <div class="form-group">
-                          <input type="text" placeholder="Betreff" id="msg_subject" class="form-control" name="subject" required="" data-error="Bitte geben Sie den Betreff ein.">
+                          <input type="text" placeholder="Betreff" id="msg_subject" class="form-control" name="subject" required pattern=".*\S.*" data-error="Bitte geben Sie den Betreff ein.">
                           <div class="help-block with-errors"></div>
                         </div>
                       </div>
                       <div class="col-md-12">
                         <div class="form-group">
-                          <textarea class="form-control" id="message" placeholder="Nachricht" rows="7" name="message" data-error="Bitte geben Sie eine Nachricht ein." required></textarea>
+                          <textarea class="form-control" id="message" placeholder="Nachricht" rows="7" name="message" pattern=".*\S.*" data-error="Bitte geben Sie eine Nachricht ein." required></textarea>
                           <div class="help-block with-errors"></div>
                         </div>
                         <div class="submit-button">
