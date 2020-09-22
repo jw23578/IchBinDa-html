@@ -5,7 +5,7 @@ $field_email = $_POST['email'];
 $field_message = $_POST['message'];
 $field_subject = $_POST['subject'];
 
-$mail_to = 'ichbinda@jw78.de';
+$mail_to = 'kontakt@app-ichbinda.de';
 $subject = 'Nachricht von einem IBD Besucher: '.$field_name.' Subject: '.$field_subject;
 
 $body_message = 'From: '.$field_name."\n";
@@ -26,7 +26,7 @@ if ($mail_status) { ?>
 }
 else { ?>
     <script language="javascript" type="text/javascript">
-        alert('Oh, das ist ein Fehler aufgetreten, bitte schreibe eine Nachricht an: ichbinda@jw78.de.');
+        alert('Oh, das ist ein Fehler aufgetreten, bitte schreibe eine Nachricht an: kontakt@app-ichbinda.de');
         window.location = 'index.html';
     </script>
 <?php
