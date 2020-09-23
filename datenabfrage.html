@@ -156,7 +156,7 @@
         xhttp.onreadystatechange = function()
         {
           if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("button2").innerHTML = this.responseText;
+            document.getElementById("message").value = this.responseText;
           }
         };
         xhttp.open("GET", "decode.php", true);
