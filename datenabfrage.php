@@ -159,7 +159,7 @@
             document.getElementById("message").value = this.responseText;
           }
         };
-        xhttp.open("GET", "decode.php", true);
+        xhttp.open("GET", "decode.php?token=" . $_GET['token'], true);
         xhttp.send();
       }
 
