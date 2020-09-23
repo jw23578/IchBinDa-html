@@ -5,6 +5,6 @@ $field_email = $_POST['email'];
 $field_message = $_POST['message'];
 $field_subject = $_POST['subject'];
 
-echo "hello"
+echo "hello" + rand()
 
 ?>
