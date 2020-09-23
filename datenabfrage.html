@@ -148,47 +148,24 @@
       <script src="js/nivo-lightbox.js"></script>
       <script src="js/jquery.magnific-popup.min.js"></script>
       <script src="js/waypoints.min.js"></script>
-      <script src="js/form-validator.min.js"></script>
-      <script src="js/contact-form-script.js"></script>
       <script src="js/main.js"></script>
       <script>
-      function sendAjaxRequest(element, urlToSend)
+      function sendDecodeRequest()
       {
         var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-     document.getElementById("message").innerHTML = this.responseText;
-    }
-  };
-  xhttp.open("GET", "decode.php", true);
-  xhttp.send();
-    return
-        var clickedButton = element;
-        $.ajax({type: "POST",
-        url: urlToSend,
-        data: { id: clickedButton.val(),
-          access_token: $("#access_token").val(),
-          messages: $("#message").val()
-        },
-        success:function(result){
-          alert('ok');
-        },
-        error:function(result)
-        {
-          alert('error');
-        }
-      });
-    }
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("message").innerHTML = this.responseText;
+          }
+        };
+        xhttp.open("GET", "decode.php", true);
+        xhttp.send();        
+      }
 
     $(document).ready(function(){
       $("#button1").click(function(e){
         e.preventDefault();
-        sendAjaxRequest($(this),'index.html');
-      });
-
-      $("#button2").click(function(e){
-        e.preventDefault();
-        sendAjaxRequest($(this),'/pages/test/');
+        sendDecodeRequest();
       });
     });
   </script>
