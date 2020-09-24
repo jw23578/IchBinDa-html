@@ -58,7 +58,7 @@
                   <p><br></p>
                   <div>
                     <div class="submit-button">
-                      <button class="btn btn-common btn-effect" id="button2">Alle entschlüsselten Daten als CSV herunterladen</button>
+                      <button class="btn btn-common btn-effect" id="button2">Alle entschlüsselten Daten<br>als CSV herunterladen</button>
                       <div id="msgSubmit" class="h3 hidden"></div>
                       <div class="clearfix"></div>
                     </div>
