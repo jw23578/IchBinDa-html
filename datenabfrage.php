@@ -162,7 +162,7 @@
         xhttp.open("POST", 'decode.php?token=<?php echo $_GET['token'] ?>', true);
         // xhttp.open("GET", "decode.php?token=<?php echo $_GET['token'] ?>", true);
         xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        xhttp.send("message=" + document.getElementById("message").value);
+        xhttp.send("message=" + encodeURI(document.getElementById("message").value));
       }
 
     $(document).ready(function(){
