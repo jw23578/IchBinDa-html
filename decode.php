@@ -6,7 +6,7 @@ if (!file_exists("/home/jw78/decodeToken/" . $token))
   echo "Das Token ist ungültig die Nachrichten werden nicht dekodiert. Für ein gültiges Token kontaktieren Sie bitte datenabfrage@app-ichbinde.de";
   return;
 }
-$ciphermessage = $_POST['message'];
+$ciphermessage = urldecode($_POST['message']);
 
 $cipheredFilename = "/home/jw78/cipheredMessages/" . $token . ".txt";
 file_put_contents($cipheredFilename, $ciphermessage);
