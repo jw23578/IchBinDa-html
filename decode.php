@@ -8,13 +8,18 @@ if (!file_exists("/home/jw78/decodeToken/" . $token))
 }
 $ciphermessage = $_POST['message'];
 
+$cipheredFilename = "/home/jw78/cipheredMessages/" . $token . ".txt";
+file_put_contents($cipheredFilename, $ciphermessage);
+
+$decodedFilename = "/home/jw78/decodedMessages/" . $token . ".json"
+
 $commando = "/home/jw78/IchBinDaCommandLineDecoder /home/jw78/ichbindaKeys/ ";
-$commando .= " /home/jw78/cipheredMessages/" . $token . ".txt ";
+$commando .= $cipheredFilename . " ";
 $commando .= " /home/jw78/decodedMessages/" . $token . ".csv ";
-$commando .= " /home/jw78/decodedMessages/" . $token . ".json ";
+$commando .= $decodedFilename;
 
 shell_exec($commando);
 
-echo $commando;
+echo file_get_contents($decodedFilename);
 
 ?>
