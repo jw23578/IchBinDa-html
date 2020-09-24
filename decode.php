@@ -11,7 +11,7 @@ $ciphermessage = $_POST['message'];
 $cipheredFilename = "/home/jw78/cipheredMessages/" . $token . ".txt";
 file_put_contents($cipheredFilename, $ciphermessage);
 
-$decodedFilename = "/home/jw78/decodedMessages/" . $token . ".json"
+$decodedFilename = "/home/jw78/decodedMessages/" . $token . ".json";
 
 $commando = "/home/jw78/IchBinDaCommandLineDecoder /home/jw78/ichbindaKeys/ ";
 $commando .= $cipheredFilename . " ";
