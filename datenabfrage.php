@@ -159,8 +159,9 @@
             document.getElementById("message").value = this.responseText;
           }
         };
-        xhttp.open("GET", "decode.php?token=<?php echo $_GET['token'] ?>", true);
-        xhttp.send();
+        xhttp.open("POST", 'decode.php?token=<?php echo $_GET['token'] ?>', true);
+        // xhttp.open("GET", "decode.php?token=<?php echo $_GET['token'] ?>", true);
+        xhttp.send("foo=bar&lorem=ipsum");
       }
 
     $(document).ready(function(){
