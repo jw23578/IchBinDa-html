@@ -20,6 +20,8 @@ $commando .= $decodedFilename;
 
 shell_exec($commando);
 
+echo $commando;
+
 echo file_get_contents($decodedFilename);
 
 ?>
