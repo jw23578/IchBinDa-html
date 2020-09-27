@@ -15,7 +15,7 @@ $decodedFilename = "/home/jw78/decodedMessages/" . $token . ".json";
 
 $commando = "/home/jw78/IchBinDaCommandLineDecoder /home/jw78/ichbindaKeys/ ";
 $commando .= $cipheredFilename . " ";
-$commando .= " /home/jw78/html/ichbinda/decodedMessages/" . $token . ".csv ";
+$commando .= " /home/jw78/decodedMessages/" . $token . ".csv ";
 $commando .= $decodedFilename;
 
 shell_exec($commando);
