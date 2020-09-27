@@ -49,7 +49,7 @@
                 -->
                 <input type="hidden" name="MAX_FILE_SIZE" value="20000">
                 <label>Wählen Sie ein E-Mail-Datei (*.eml) zum Hochladen aus.
-                  <input name="datei" type="file" accept="*.eml">
+                  <input name="datei" type="file" accept=".eml">
                 </label>
                 <button>Datei hochladen</button>
               </form>
