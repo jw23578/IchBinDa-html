@@ -39,6 +39,20 @@
                 <div class="section-header">
                   <h2 class="section-title">Nachrichten dekodieren</h2>
                 </div>
+                <form method="post" enctype="multipart/form-data">
+                  <!--
+                  Angabe einer maximalen Dateigröße in Bytes (hier: 2 MB).
+                  Wird von PHP ausgewertet, um einen schnellen Abbruch bei zu großen
+                  Dateien zu ermöglichen. Der Angabe kann aber nicht vertraut werden,
+                  da sie leicht vom Nutzer manipuliert werden kann. Muss vor dem
+                  eigentlichen Formularfeld notiert werden.
+                -->
+                <input type="hidden" name="MAX_FILE_SIZE" value="20000">
+                <label>Wählen Sie ein E-Mail-Datei (*.eml) zum Hochladen aus.
+                  <input name="datei" type="file" accept="*.eml">
+                </label>
+                <button>Datei hochladen</button>
+              </form>
                 <form id="contactForm" method="post">
                   <div class="row">
                     <div class="col-md-12">
