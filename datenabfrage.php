@@ -188,7 +188,7 @@
       elem.addEventListener("change", fileUpload);
       function fileUpload()
       {
-        var fileList = document.getElementById("uploadFile").files,
+        var fileList = document.getElementById("uploadFile").files;
         for (var i = 0; i < fileList.length; ++i)
         {
           var file = fileList[i];
