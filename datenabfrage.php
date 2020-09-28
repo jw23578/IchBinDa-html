@@ -189,6 +189,7 @@
       function fileUpload()
       {
         var fileList = document.getElementById("uploadFile").files;
+        document.getElementById("message").value = "";
         for (var i = 0; i < fileList.length; ++i)
         {
           var file = fileList[i];
@@ -205,7 +206,7 @@
             xhttp.onreadystatechange = function()
             {
               if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("message").value = this.responseText;
+                document.getElementById("message").value += "\n" + this.responseText;
               }
             };
             xhttp.open("POST", 'decodeEMLFile.php?token=<?php echo $_GET['token'] ?>', true);
