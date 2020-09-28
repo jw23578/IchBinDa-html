@@ -192,10 +192,25 @@
         for (var i = 0; i < fileList.length; ++i)
         {
           var file = fileList[i];
-          alert(file.name);
           if (file.size > 20000)
           {
             alert("Diese Datei ist zu groß und wird nicht entschlüsselt: " + file.name)
+          }
+          else
+          {
+            var data = new FormData();
+            data.append('file', file);
+            $.ajax({
+              url: 'decodeEMLFile.php', // Wohin soll die Datei geschickt werden?
+              data: data,          // Das ist unser Datenobjekt.
+              type: 'POST',         // HTTP-Methode, hier: POST
+              processData: false,
+              contentType: false,
+              // und wenn alles erfolgreich verlaufen ist, schreibe eine Meldung
+              // in das Response-Div
+              success: function() {document.getElementById("message").value = this.responseText;
+              }
+            });
           }
         }
       }
