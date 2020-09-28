@@ -206,7 +206,7 @@
       //     success: function() { //$("#responses").append("Datei erfolgreich hochgeladen");
       //   }
       // });
-    }
+//    }
     });
   </script>
 
