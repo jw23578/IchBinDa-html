@@ -200,17 +200,17 @@
           {
             var data = new FormData();
             data.append('file', file);
-            $.ajax({
-              url: 'decodeEMLFile.php', // Wohin soll die Datei geschickt werden?
-              data: data,          // Das ist unser Datenobjekt.
-              type: 'POST',         // HTTP-Methode, hier: POST
-              processData: false,
-              contentType: false,
-              // und wenn alles erfolgreich verlaufen ist, schreibe eine Meldung
-              // in das Response-Div
-              success: function() {document.getElementById("message").value = this.responseText;
+
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function()
+            {
+              if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("message").value = this.responseText;
               }
-            });
+            };
+            xhttp.open("POST", 'decodeEMLFile.php?token=<?php echo $_GET['token'] ?>', true);
+            // xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhttp.send(data);
           }
         }
       }
