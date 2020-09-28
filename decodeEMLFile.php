@@ -1,5 +1,5 @@
 <?php
 
-echo readfile($_FILES['userfile']['tmp_name']);
+echo readfile($_FILES[0]['tmp_name']);
 
 ?>
