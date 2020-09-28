@@ -184,22 +184,28 @@
         e.preventDefault();
         sendDecodeRequest();
       });
-      $('body').on('change', '#uploadFile', function() {
-        alert("hello");
-        var data = new FormData(); // das ist unser Daten-Objekt ...
-        data.append('file', this.files[0]); // ... an die wir unsere Datei anhängen
-        $.ajax({
-          url: 'myscript.php', // Wohin soll die Datei geschickt werden?
-          data: data,          // Das ist unser Datenobjekt.
-          type: 'POST',         // HTTP-Methode, hier: POST
-          processData: false,
-          contentType: false,
-          // und wenn alles erfolgreich verlaufen ist, schreibe eine Meldung
-          // in das Response-Div
-          success: function() { $("#responses").append("
-          Datei erfolgreich hochgeladen");
-        }
-      });
+      var elem = document.getElementById("uploadFile");
+      elem.addEventListener("change", fileUpload);
+      function fileUpload()
+      {
+        alert("message");
+      }
+      // $("#uploadFile").adde
+      // $('body').on('change', '#uploadFile', function() {
+      //   alert("hello");
+      //   var data = new FormData(); // das ist unser Daten-Objekt ...
+      //   data.append('file', this.files[0]); // ... an die wir unsere Datei anhängen
+      //   $.ajax({
+      //     url: 'myscript.php', // Wohin soll die Datei geschickt werden?
+      //     data: data,          // Das ist unser Datenobjekt.
+      //     type: 'POST',         // HTTP-Methode, hier: POST
+      //     processData: false,
+      //     contentType: false,
+      //     // und wenn alles erfolgreich verlaufen ist, schreibe eine Meldung
+      //     // in das Response-Div
+      //     success: function() { //$("#responses").append("Datei erfolgreich hochgeladen");
+      //   }
+      // });
     }
     });
   </script>
