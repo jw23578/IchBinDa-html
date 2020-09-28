@@ -188,7 +188,7 @@
       elem.addEventListener("change", fileUpload);
       function fileUpload()
       {
-        alert("message");
+        alert(this.files[0]);
       }
       // $("#uploadFile").adde
       // $('body').on('change', '#uploadFile', function() {
