@@ -49,7 +49,7 @@
                 -->
                 <input type="hidden" name="MAX_FILE_SIZE" value="20000">
                 <label>Wählen Sie ein E-Mail-Datei (*.eml) zum Hochladen aus.
-                  <input name="datei" type="file" accept=".eml">
+                  <input id="uploadFile" name="datei" type="file" accept=".eml">
                 </label>
                 <button>Datei hochladen</button>
               </form>
@@ -184,6 +184,23 @@
         e.preventDefault();
         sendDecodeRequest();
       });
+      $('body').on('change', '#uploadFile', function() {
+        alert("hello");
+        var data = new FormData(); // das ist unser Daten-Objekt ...
+        data.append('file', this.files[0]); // ... an die wir unsere Datei anhängen
+        $.ajax({
+          url: 'myscript.php', // Wohin soll die Datei geschickt werden?
+          data: data,          // Das ist unser Datenobjekt.
+          type: 'POST',         // HTTP-Methode, hier: POST
+          processData: false,
+          contentType: false,
+          // und wenn alles erfolgreich verlaufen ist, schreibe eine Meldung
+          // in das Response-Div
+          success: function() { $("#responses").append("
+          Datei erfolgreich hochgeladen");
+        }
+      });
+    }
     });
   </script>
 
