@@ -188,9 +188,15 @@
       elem.addEventListener("change", fileUpload);
       function fileUpload()
       {
+        var files = this.files
         for (var i = 0; i < files.length; ++i)
         {
-          alert(this.files[i].name);
+          var file = files[i];
+          alert(file.name);
+          if (file.size > 20000)
+          {
+            alert("Diese Datei ist zu groß und wird nicht entschlüsselt: " + file.name)
+          }
         }
       }
       // $("#uploadFile").adde
