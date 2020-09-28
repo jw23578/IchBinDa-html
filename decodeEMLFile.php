@@ -1,5 +1,5 @@
 <?php
 
-echo "demodecode"
+echo print_r($_FILES);
 
 ?>
