@@ -188,10 +188,10 @@
       elem.addEventListener("change", fileUpload);
       function fileUpload()
       {
-        var files = this.files
-        for (var i = 0; i < files.length; ++i)
+        var fileList = document.getElementById("uploadFile").files,
+        for (var i = 0; i < fileList.length; ++i)
         {
-          var file = files[i];
+          var file = fileList[i];
           alert(file.name);
           if (file.size > 20000)
           {
