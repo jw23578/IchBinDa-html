@@ -49,7 +49,7 @@
                 -->
                 <input type="hidden" name="MAX_FILE_SIZE" value="20000">
                 <label>Wählen Sie ein E-Mail-Datei (*.eml) zum Hochladen aus.
-                  <input id="uploadFile" name="datei" type="file" accept=".eml">
+                  <input id="uploadFile" multiple name="datei" type="file" accept=".eml">
                 </label>
                 <button>Datei hochladen</button>
               </form>
@@ -188,7 +188,10 @@
       elem.addEventListener("change", fileUpload);
       function fileUpload()
       {
-        alert(this.files[0].name);
+        for (var i = 0; i < files.length; ++i)
+        {
+          alert(this.files[i].name);
+        }
       }
       // $("#uploadFile").adde
       // $('body').on('change', '#uploadFile', function() {
