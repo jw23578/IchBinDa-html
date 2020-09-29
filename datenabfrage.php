@@ -48,10 +48,9 @@
                   eigentlichen Formularfeld notiert werden.
                 -->
                 <input type="hidden" name="MAX_FILE_SIZE" value="20000">
-                <label>Wählen Sie ein E-Mail-Datei (*.eml) zum Hochladen aus.
-                  <input id="uploadFile" multiple name="datei" type="file" accept=".eml">
+                <label>Wählen Sie eine oder mehrere E-Mail-Dateien (*.eml) zum entschlüsseln aus.
+                  <input class="btn btn-common btn-effect" id="uploadFile" multiple name="datei" type="file" accept=".eml">
                 </label>
-                <button>Datei hochladen</button>
               </form>
                 <form id="contactForm" method="post">
                   <div class="row">
