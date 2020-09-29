@@ -1,5 +1,5 @@
 <?php
 
-echo print_r($_FILES);
+echo print_r($_FILES['file']);
 
 ?>
