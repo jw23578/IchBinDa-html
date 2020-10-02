@@ -49,7 +49,7 @@
                 -->
                 <input type="hidden" name="MAX_FILE_SIZE" value="20000">
                 <label>Wählen Sie eine oder mehrere E-Mail-Dateien (*.eml) zum entschlüsseln aus.
-                  <input class="btn btn-common btn-effect" id="uploadFile" multiple name="datei" type="file" accept=".eml">
+                  <input id="uploadFile" multiple name="datei" type="file" accept=".eml">
                 </label>
               </form>
                 <form id="contactForm" method="post">
